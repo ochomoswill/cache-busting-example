@@ -12,6 +12,37 @@ There are different approaches that work for different types of websites. I rece
 - We generate a `meta.json` file along with every build in the public dir and it will act as a REST endpoint (won't be cached in browser)
 - We refresh cache (`window.location.reload(true)`) in the browser whenever a new version is released
 
+
+## Deployment
+
+Version Control
+
+```bash
+$ git add -A
+
+$ git commit -m "[message]"
+
+$ npm version patch
+
+$ git push origin master --tags
+```
+
+Delete the previous build folder
+```bash
+$ npm run clean
+```
+
+Update the App Version on the `meta.json`
+```bash
+$ npm run prebuild
+```
+
+Generate the production build
+```bash
+$ npm run build
+```
+
+
 ## License
 
 Copyright (c) 2019 Dineshkumar Pandiyan
