@@ -19,6 +19,8 @@ class App extends Component {
                 <p>
                   Bundle version - <code>v{global.appVersion}</code>
                 </p>
+
+                <p>ochomoswill has taken over.</p>
               </header>
             </div>
           );
