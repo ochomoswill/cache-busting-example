@@ -3,6 +3,12 @@ import CacheBuster from './CacheBuster';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    if(!localStorage.hasOwnProperty("Log Minute")){
+      localStorage.setItem("Log Minute", new Date().getMinutes())
+    }
+  }
+
   render() {
     return (
       <CacheBuster>
