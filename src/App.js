@@ -21,7 +21,7 @@ class App extends Component {
           return (
             <div className="App">
               <header className="App-header">
-                <h1>Cache Busting - Example 1</h1>
+                <h1>Cache and Local Storage Busting - Example 1</h1>
                 <p>
                   Bundle version - <code>v{global.appVersion}</code>
                 </p>
